@@ -5,7 +5,7 @@ class BasePage():
     # добавляем конструктор — метод, который вызывается, когда мы создаем объект.
     # В него в качестве параметров мы передаем экземпляр драйвера и url адрес.
     # Внутри конструктора сохраняем эти данные как аттрибуты нашего класса.
-    def __init__(self, browser: RemoteWebDriver, url, timeout=10):
+    def __init__(self, browser, url, timeout=10):
         self.browser = browser
         self.url = url
         self.browser.implicitly_wait(timeout)
