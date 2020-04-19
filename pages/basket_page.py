@@ -16,4 +16,6 @@ class BasketPage(BasePage):
         assert self.is_not_element_present(*BasketPageLocators.BASKET_TITLE), "Basket contains some products"
 
     def should_be_empty_basket_text(self):
-        assert self.is_element_present(*BasketPageLocators.EMPTY_BASKET_TEXT), "Empty basket text not found"
+        empty_basket_text = (self.browser.find_element(*BasketPageLocators.EMPTY_BASKET_TEXT)).text
+        print(f"text is: {empty_basket_text}")
+        assert "Your basket is empty" in empty_basket_text, "Empty basket text not found"
