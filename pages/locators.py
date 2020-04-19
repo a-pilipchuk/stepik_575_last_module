@@ -14,6 +14,6 @@ class ProductPageLocators():
     PRODUCT_NAME = (By.XPATH, "//div[@class='col-sm-6 product_main']/h1")
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main>.price_color")
     ADD_TO_BASKET_BUTTON = (By.CSS_SELECTOR, ".btn-add-to-basket")
-    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages>.alert-success>.alertinner")
-    INFO_MESSAGE = (By.CSS_SELECTOR, "#messages>.alert-info>.alertinner")
+    NAME_FROM_SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alertinner>strong")
+    BASKET_TOTAL = (By.CSS_SELECTOR, ".alert-info>.alertinner strong")
 
