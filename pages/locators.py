@@ -16,4 +16,5 @@ class ProductPageLocators():
     ADD_TO_BASKET_BUTTON = (By.CSS_SELECTOR, ".btn-add-to-basket")
     NAME_FROM_SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alertinner>strong")
     BASKET_TOTAL = (By.CSS_SELECTOR, ".alert-info>.alertinner strong")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages>.alert-success>.alertinner")
 
